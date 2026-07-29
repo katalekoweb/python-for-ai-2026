@@ -1,8 +1,10 @@
-# Logical operators
-age = 25
-has_licence = True
-drunk = True
+name = "John"
+string = f"Hi there, my name is {name}!"
 
-# AND - both must be true
-can_drive = age >= 16 and has_licence and not drunk
-print(can_drive)
+# String methods
+
+name.lower()
+name.upper()
+
+sentece = "Hello iam a Developer"
+sentece.title()
