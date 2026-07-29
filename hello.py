@@ -1,19 +1,12 @@
-# String
-string = "My name is Julian"
+is_true = True
 
-my_long_string = """
-My name is Julian.
-And my last name is Kataleko
-"""
+age = 18
 
-print(my_long_string)
+can_vote = age >= 18
 
-first_name = "Julian"
-last_name = "Kata"
-
-full_name = first_name + " " + last_name
-long_dash = "-" * 100
-
-print(full_name)
-print(long_dash)
-print(len(full_name))
+print(age == 18)
+print(age != 18)
+print(age > 18)
+print(age >= 18)
+print(age < 18)
+print(age <= 18)
