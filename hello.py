@@ -1,21 +1,19 @@
-name = "Alice"
-age = 25
-is_student = True
+# String
+string = "My name is Julian"
 
-# Comments - human readable texts
-# Snake case with lower case and undercore
-
-# Multiple lines comments
-"""
-This is a multi-line
-quote than can go on and on
-and on
+my_long_string = """
+My name is Julian.
+And my last name is Kataleko
 """
 
-# Good commnets explain Why and not What
+print(my_long_string)
 
-first_name = "Alice" # This is the first name
-user_age = 25
-print(user_age)
+first_name = "Julian"
+last_name = "Kata"
 
+full_name = first_name + " " + last_name
+long_dash = "-" * 100
 
+print(full_name)
+print(long_dash)
+print(len(full_name))
