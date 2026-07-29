@@ -1,10 +1,30 @@
-name = "John"
-string = f"Hi there, my name is {name}!"
+# temperature = 26
 
-# String methods
+# if temperature >30:
+#     print("It's very hot!")
+# elif temperature > 25:
+#     print("It's hot!")
+# else:
+#     print("It's nice weather!")
 
-name.lower()
-name.upper()
+# score = 90
 
-sentece = "Hello iam a Developer"
-sentece.title()
+# if score >= 90:
+#     print("A - Excellent!")
+# elif score >= 80:
+#     print("B - Good Job!")
+# elif score >= 70:
+#     print("C - Keep it up!")
+# else:
+#     print("F - Need Improvement")
+
+has_ticket = True
+age = 15
+
+if has_ticket:
+    if age >= 18:
+        print("Enjoy the movie!")
+    else:
+        print("Needs supervision")
+else:
+    print("Plase buy a ticket!")
