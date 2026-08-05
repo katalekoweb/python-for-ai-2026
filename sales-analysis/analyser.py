@@ -1,15 +1,37 @@
 import pandas as pd
 import json
 import os
+from helpers import calculate_total, format_currency
 
 # Read the CSV file
 df = pd.read_csv('data/sales.csv')
+
+# Calculate total for each row
+totals = []
+for index, row in df.iterrows():
+    total = calculate_total(row['quantity'], row['price'])
+    totals.append(total)
+
+# Add totals to our data
+df['total'] = totals
+
+# Display with formatted totals
+print("Sales Data:")
+for index, row in df.iterrows():
+    formatted_total = format_currency(row['total'])
+    print(f"{row['product']}: {formatted_total}")
+
+# Show grand total
+grand_total = df['total'].sum()
+formatted_grand_total = format_currency(grand_total)
+print(f"\nGrand Total: {formatted_grand_total}")
+
 print("CSV Data:")
 print(df)
 print(f"\nShape: {df.shape[0]} rows, {df.shape[1]} columns")
 
 # Quick operation: calculate total for each row
-df['total'] = df['quantity'] * df['price']
+# df['total'] = df['quantity'] * df['price']
 print("\nWith totals:")
 print(df)
 
