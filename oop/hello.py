@@ -3,6 +3,9 @@ class Dog:
         self.name = name
         self.breed = breed
         
+    def bark(self):
+        print('Bark!!')
+        
 class Cat:
     def __init__(self, name, color):
         self.name = name
@@ -10,6 +13,4 @@ class Cat:
         
 jerry = Dog(name='Jerry', breed='Labrador')
 print(jerry.name)
-
-dog = Dog(name="Tim")
-print(dog.name)
+print(jerry.bark())
